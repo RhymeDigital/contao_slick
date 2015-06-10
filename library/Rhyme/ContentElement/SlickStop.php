@@ -3,14 +3,14 @@
 /**
  * Slick carousel integration for Contao Open Source CMS
  *
- * Copyright (C) 2014 HB Agency
+ * Copyright (C) 2015 Rhyme.Digital
  *
  * @package    Slick
- * @link       http://www.hbagency.com
+ * @link       http://rhyme.digital
  * @license    http://opensource.org/licenses/lgpl-3.0.html
  */
  
- namespace HBAgency\ContentElement;
+ namespace Rhyme\ContentElement;
  
  use Contao\ContentElement as Contao_Element;
  
@@ -57,6 +57,5 @@ class SlickStop extends Contao_Element
 	{
 
 	}
-
 
 }
