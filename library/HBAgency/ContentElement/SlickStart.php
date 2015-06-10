@@ -63,7 +63,9 @@ class SlickStart extends Contao_Element
 	protected function compile()
 	{
 	    //Add in all JS/CSS
-        $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/slick/assets/slick/slick/slick.min.js|static';
+		$objCombiner = new \Combiner();
+		$objCombiner->add('system/modules/slick/assets/slick/slick/slick.min.js');
+		$GLOBALS['TL_JAVASCRIPT'][] = $objCombiner->getCombinedFile() . '|static';
         $GLOBALS['TL_CSS'][] = 'system/modules/slick/assets/slick/slick/slick.css|screen|static';
         
         if($this->cssID[0] == '')
