@@ -3,10 +3,10 @@
 /**
  * Slick carousel integration for Contao Open Source CMS
  *
- * Copyright (C) 2014 HB Agency
+ * Copyright (C) 2015 Rhyme.Digital
  *
  * @package    Slick
- * @link       http://www.hbagency.com
+ * @link       http://rhyme.digital
  * @license    http://opensource.org/licenses/lgpl-3.0.html
  */
  
@@ -25,7 +25,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['slick_jstemplate'] = array
 	'label'                   => &$GLOBALS['TL_LANG']['tl_content']['slick_jstemplate'],
 	'exclude'                 => true,
 	'inputType'               => 'select',
-	'options_callback'        => array('\HBAgency\Backend\Content\SlickCallback', 'getSlickTemplates'),
+	'options_callback'        => array('\Rhyme\Backend\Content\SlickCallback', 'getSlickTemplates'),
 	'eval'                    => array('includeBlankOption'=>true, 'chosen'=>true, 'tl_class'=>'w50'),
 	'sql'                     => "varchar(64) NOT NULL default ''"
 );

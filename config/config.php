@@ -3,10 +3,10 @@
 /**
  * Slick carousel integration for Contao Open Source CMS
  *
- * Copyright (C) 2014 HB Agency
+ * Copyright (C) 2015 Rhyme.Digital
  *
  * @package    Slick
- * @link       http://www.hbagency.com
+ * @link       http://rhyme.digital
  * @license    http://opensource.org/licenses/lgpl-3.0.html
  */
  
@@ -16,8 +16,8 @@
  */
 array_insert($GLOBALS['TL_CTE']['slider'], 0, array
 (
-	    'slick_start'   	          => 'HBAgency\ContentElement\SlickStart',
-        'slick_stop'    	          => 'HBAgency\ContentElement\SlickStop',
+	    'slick_start'   	          => 'Rhyme\ContentElement\SlickStart',
+        'slick_stop'    	          => 'Rhyme\ContentElement\SlickStop',
 ));
 
 /**

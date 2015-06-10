@@ -3,10 +3,10 @@
 /**
  * Slick carousel integration for Contao Open Source CMS
  *
- * Copyright (C) 2014 HB Agency
+ * Copyright (C) 2015 Rhyme.Digital
  *
  * @package    Slick
- * @link       http://www.hbagency.com
+ * @link       http://rhyme.digital
  * @license    http://opensource.org/licenses/lgpl-3.0.html
  */
  
@@ -14,7 +14,7 @@
 /**
  * Register PSR-0 namespace
  */
-NamespaceClassLoader::add('HBAgency', 'system/modules/slick/library');
+NamespaceClassLoader::add('Rhyme', 'system/modules/slick/library');
 
 
 /**

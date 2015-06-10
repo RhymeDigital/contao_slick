@@ -3,23 +3,24 @@
 /**
  * Slick carousel integration for Contao Open Source CMS
  *
- * Copyright (C) 2014 HB Agency
+ * Copyright (C) 2015 Rhyme.Digital
  *
  * @package    Slick
- * @link       http://www.hbagency.com
+ * @link       http://rhyme.digital
  * @license    http://opensource.org/licenses/lgpl-3.0.html
  */
  
-namespace HBAgency\Backend\Content;
+namespace Rhyme\Backend\Content;
  
  
- /**
+/**
  * Class SlickCallback
  *
  * Provides methods for backend DCA
- * @copyright  2014 HB Agency
- * @author     Blair Winans <bwinans@hbagency.com>
- * @package    Zurb_Foundation
+ * @copyright  2015 Rhyme.Digital
+ * @author     Blair Winans <blair@rhyme.digital>
+ * @author     Adam Fisher <adam@rhyme.digital>
+ * @package    Slick
  */
 class SlickCallback extends \Backend
 {

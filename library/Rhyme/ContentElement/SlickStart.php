@@ -3,14 +3,14 @@
 /**
  * Slick carousel integration for Contao Open Source CMS
  *
- * Copyright (C) 2014 HB Agency
+ * Copyright (C) 2015 Rhyme.Digital
  *
  * @package    Slick
- * @link       http://www.hbagency.com
+ * @link       http://rhyme.digital
  * @license    http://opensource.org/licenses/lgpl-3.0.html
  */
  
- namespace HBAgency\ContentElement;
+ namespace Rhyme\ContentElement;
  
  use Contao\ContentElement as Contao_Element;
  
@@ -18,9 +18,10 @@
  * Class SlickStart
  *
  * Creates a starting Slick slider wrapper
- * @copyright  2014 HB Agency
- * @author     Blair Winans <bwinans@hbagency.com>
- * @package    Zurb_Foundation
+ * @copyright  2015 Rhyme.Digital
+ * @author     Blair Winans <blair@rhyme.digital>
+ * @author     Adam Fisher <adam@rhyme.digital>
+ * @package    Slick
  */
 class SlickStart extends Contao_Element
 {
@@ -84,6 +85,5 @@ class SlickStart extends Contao_Element
 		$GLOBALS['TL_BODY'][] = $objTemplate->parse();
 		
 	}
-
 
 }
