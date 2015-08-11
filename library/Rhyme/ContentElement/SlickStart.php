@@ -48,7 +48,6 @@ class SlickStart extends Contao_Element
 		{
 			$this->strTemplate = 'be_wildcard';
 			$this->Template = new \BackendTemplate($this->strTemplate);
-			$class = deserialize($this->cssID);
 			$this->Template->wildcard = '### SLICK SLIDER START ###';
 			$this->Template->title = $this->headline;
 			return $this->Template->parse();
@@ -64,10 +63,8 @@ class SlickStart extends Contao_Element
 	protected function compile()
 	{
 	    //Add in all JS/CSS
-		$objCombiner = new \Combiner();
-		$objCombiner->add('system/modules/slick/assets/slick/slick/slick.min.js');
-		$GLOBALS['TL_JAVASCRIPT'][] = $objCombiner->getCombinedFile() . '|static';
-        $GLOBALS['TL_CSS'][] = 'system/modules/slick/assets/slick/slick/slick.css|screen|static';
+		$GLOBALS['TL_HEAD']['slickcss'] = '<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/'.SLICK_VERSION.'/slick.css"/>';
+        $GLOBALS['TL_BODY']['slickjs'] = '<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/'.SLICK_VERSION.'/slick.min.js"></script>';
         
         if($this->cssID[0] == '')
         {

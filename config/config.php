@@ -9,8 +9,13 @@
  * @link       http://rhyme.digital
  * @license    http://opensource.org/licenses/lgpl-3.0.html
  */
- 
- 
+
+
+/**
+ * Slick Version
+ */
+define('SLICK_VERSION', '1.5.8');
+
 /**
  * Content Elements
  */
